@@ -8,7 +8,7 @@ case "$1" in
         julia --project=/StochasticBarrierFunctions -e 'yaml_file="benchmarks/linear/systems/contraction/sos.yaml"; include("benchmarks/barrier_synthesis.jl")'
         ;;
 
-    contraction_pwc_dual) 
+    contraction_pwc) 
         echo "Running $1"
         julia --project=/StochasticBarrierFunctions -e 'yaml_file="benchmarks/linear/systems/contraction/pwc.yaml"; include("benchmarks/barrier_synthesis.jl")'
         ;;
